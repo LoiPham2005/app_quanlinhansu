@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ASM</string>
+    <string name="login_name">Chào mừng bạn đến với nishkam</string>
+    <string name="login1">Đăng nhập để tiếp tục</string>
+    <string name="login_email">Nhập Email</string>
+    <string name="login_password">Nhập password</string>
+    <string name="login_login">Đăng nhập</string>
+    <string name="login_register">Đăng kí</string>
+    <string name="login_forgot">Nếu bạn chưa có tài khoản hãy nhấn đăng kí</string>
+    <string name="register_log">Đăng kí</string>
+</resources>

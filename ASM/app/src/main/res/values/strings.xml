@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ASM</string>
+    <string name="login_name">Welcome to nishkam</string>
+    <string name="login1">Log in to continue</string>
+    <string name="login_email">Enter Email</string>
+    <string name="login_password">Enter password</string>
+    <string name="login_login">Login</string>
+    <string name="login_register">register</string>
+    <string name="login_forgot">If you don\'t have an account, click </string>
+    <string name="register_log">Register\n</string>
+
+</resources>

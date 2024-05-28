@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="manchinh.home">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="67dp"
+        android:src="@drawable/nishkam"
+        />
+
+    <RelativeLayout
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30sp"
+        >
+
+        <ImageView
+            android:id="@+id/alarm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/alarm1"
+            android:layout_marginRight="15sp"
+            />
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search"
+            android:layout_toRightOf="@id/alarm"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/department_layout"
+        android:layout_width="match_parent"
+        android:layout_height="140sp"
+        android:background="#B87D5C"
+        android:layout_below="@id/icon"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/department_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textSize="30sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/department_text"
+            android:text="3"
+            android:textSize="40sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20sp"
+            android:text="Details"
+            android:backgroundTint="#1D9A39"
+            android:textColor="#000000"
+            android:radius="16dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="140sp"
+        android:background="#84D255"
+        android:layout_below="@id/department_layout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/employee_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employees"
+            android:textSize="30sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/employee_text"
+            android:text="10"
+            android:textSize="40sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/detailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20sp"
+            android:text="Details"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#000000"
+            android:radius="16dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/employees"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="140sp"
+        android:background="#84D255"
+        android:layout_below="@id/department_layout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/employee_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employees"
+            android:textSize="30sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/employee_text1"
+            android:text="10"
+            android:textSize="40sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_detail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20sp"
+            android:text="Details"
+            android:backgroundTint="#C17261"
+            android:textColor="#000000"
+            android:radius="16dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/recruitment"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="140sp"
+        android:background="#7555D2"
+        android:layout_below="@id/employees"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/recruitment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recruitment"
+            android:textSize="30sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recruitment_text"
+            android:text="10"
+            android:textSize="40sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_detail3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20sp"
+            android:text="Details"
+            android:backgroundTint="#B9C534"
+            android:textColor="#000000"
+            android:radius="16dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#CABCB9"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10sp"
+        >
+
+        <ImageView
+            android:id="@+id/icon_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/house1"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/icon_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/new1"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/icon_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting1"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

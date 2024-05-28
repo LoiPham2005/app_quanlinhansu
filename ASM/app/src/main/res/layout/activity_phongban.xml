@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="phongban.phongban">
+
+    <RelativeLayout
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/alarm1"
+            android:layout_toStartOf="@id/imgsearch"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/imgsearch"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/search"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="30sp"
+            />
+
+        <ImageView
+            android:id="@+id/imageback"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_margin="30sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:orientation="horizontal"
+        android:layout_below="@id/icon"
+        android:background="#53BC42">
+
+        <Space
+            android:layout_width="0sp"
+            android:layout_height="70sp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="70sp"
+            android:src="@drawable/menu"
+            android:layout_marginRight="20sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_marketing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/menu"
+        android:background="#D14C4C"
+        >
+
+        <ImageView
+            android:layout_width="230sp"
+            android:layout_height="140sp"
+            android:src="@drawable/marketting"
+            />
+
+        <TextView
+            android:id="@+id/tv_maketing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maketing"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dev"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/layout_marketing"
+        android:background="#3BC683">
+
+        <ImageView
+            android:layout_width="230sp"
+            android:layout_height="140sp"
+            android:src="@drawable/dev2" />
+
+        <TextView
+            android:id="@+id/tv_devoloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            android:text="Developer"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/layout_dev"
+        android:background="#3BC683">
+
+        <ImageView
+            android:layout_width="230sp"
+            android:layout_height="140sp"
+            android:src="@drawable/taichinh" />
+
+        <TextView
+            android:id="@+id/tv_finance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            android:text="Finance"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#CABCB9"
+    android:layout_alignParentBottom="true"
+    android:paddingTop="10sp"
+    >
+
+    <ImageView
+        android:id="@+id/icon_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/house1"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+        android:id="@+id/icon_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/new1"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+        android:id="@+id/icon_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting1"
+        android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>
