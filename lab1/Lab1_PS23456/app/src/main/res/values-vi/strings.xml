@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab1_PS23456</string>
+    <string name="content">"Các thành phần cơ bản trong android:
+        1. Activity \n
+        2. Service \n
+        3. ContentProvider \n
+        4. Broadcastrecevive"</string>
+</resources>

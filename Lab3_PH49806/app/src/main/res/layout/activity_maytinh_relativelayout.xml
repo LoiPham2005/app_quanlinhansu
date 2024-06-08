@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="maytinh.maytinh_relativelayout">
+
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+    <ImageView
+        android:id="@+id/tv1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dau_dola"
+        />
+
+    <ImageView
+        android:id="@+id/tv2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/muiten"
+        android:layout_toEndOf="@id/tv1"
+        />
+
+    <ImageView
+        android:id="@+id/tv3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dau_euro"
+        android:layout_toEndOf="@id/tv2"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/relayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="1,000.00"
+            android:textColor="#406B82"
+            android:textSize="30dp"
+            android:background="@drawable/custom"
+            android:layout_toEndOf="@id/spinner1"
+             />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayout1"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONVERT TO"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/relayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="1,000.00"
+            android:textColor="#406B82"
+            android:textSize="30dp"
+            android:background="@drawable/custom"
+            android:layout_toEndOf="@id/spinner2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayoutso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        >
+
+        <Button
+            android:id="@+id/so1"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="1"
+            android:textSize="30dp"
+            android:backgroundTint="#0C5389"
+            />
+
+        <Button
+            android:id="@+id/so2"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="2"
+            android:textSize="30dp"
+            android:layout_toEndOf="@id/so1"
+            android:backgroundTint="#0C5389"
+            />
+
+        <Button
+            android:id="@+id/so3"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="3"
+            android:textSize="30dp"
+            android:layout_toEndOf="@id/so2"
+            android:backgroundTint="#0C5389"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayoutso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayoutso1"
+        >
+
+        <Button
+            android:id="@+id/so4"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="4"
+            android:textSize="30dp"
+            android:backgroundTint="#0C5389"
+            />
+
+        <Button
+            android:id="@+id/so5"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="5"
+            android:textSize="30dp"
+            android:layout_toEndOf="@id/so4"
+            android:backgroundTint="#0C5389"
+            />
+
+        <Button
+            android:id="@+id/so6"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="6"
+            android:textSize="30dp"
+            android:layout_toEndOf="@id/so5"
+            android:backgroundTint="#0C5389"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayoutso3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayoutso2"
+        >
+
+        <Button
+            android:id="@+id/so7"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="7"
+            android:textSize="30dp"
+            android:backgroundTint="#0C5389"
+            />
+
+        <Button
+            android:id="@+id/so8"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="8"
+            android:textSize="30dp"
+            android:layout_toEndOf="@id/so7"
+            android:backgroundTint="#0C5389"
+            />
+
+        <Button
+            android:id="@+id/so9"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="9"
+            android:textSize="30dp"
+            android:layout_toEndOf="@id/so8"
+            android:backgroundTint="#0C5389"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayoutso4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayoutso3"
+        >
+
+        <Button
+            android:id="@+id/so00"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="00"
+            android:textSize="30dp"
+            android:backgroundTint="#0C5389"
+            />
+
+        <Button
+            android:id="@+id/so0"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:layout_toEndOf="@id/so00"
+            android:backgroundTint="#0C5389"
+            />
+
+        <Button
+            android:id="@+id/soX"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="X"
+            android:textSize="30dp"
+            android:layout_toEndOf="@id/so0"
+            android:backgroundTint="#0C5389"
+            />
+    </RelativeLayout>
+</RelativeLayout>

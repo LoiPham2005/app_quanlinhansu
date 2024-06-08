@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="danhsach.SuaThongTin">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa tên lớp ở dưới" />
+
+    <EditText
+        android:id="@+id/ed_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sửa mã "
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sửa tên "
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_lop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sửa Lớp"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật"/>
+
+
+
+</LinearLayout>
+

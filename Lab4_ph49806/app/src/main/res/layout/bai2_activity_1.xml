@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="bai2.Activity1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn muốn mua gì"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edt_muonmua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sau khi nhấn nút hãy đợi nhà bán hàng báo giá"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btn_gui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gửi"
+        android:layout_marginTop="10sp"
+        app:cornerRadius="5sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá sản phẩm là: "
+        android:textSize="15sp"
+        android:layout_marginTop="50sp"
+        android:textColor="#50A9F4"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textColor="#E91E63"/>
+</LinearLayout>

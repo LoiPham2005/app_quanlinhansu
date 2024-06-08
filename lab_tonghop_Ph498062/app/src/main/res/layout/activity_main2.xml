@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="danhsach.MainActivity2">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#8BC34A"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo 2"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        />
+  </androidx.appcompat.widget.Toolbar>
+
+
+  </LinearLayout>

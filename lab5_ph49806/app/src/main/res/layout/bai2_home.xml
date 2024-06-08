@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bai2.Home">
+
+
+    <TextView
+        android:id="@+id/ds"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext"
+        android:gravity="center_horizontal"
+        android:text="DANH SÁCH SINH VIÊN"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_them"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ds"
+        android:layout_gravity="end"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="10sp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/custom_button"
+        android:text="THÊM MỚI" />
+
+    <ListView
+        android:id="@+id/lvStudents"
+        android:layout_below="@id/btn_them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="bai2.Activity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tử thách hàng cần mua là"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_hangcanmua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0BBDD5"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Hãy báo giá cho khách hàng: "
+        />
+
+    <EditText
+        android:id="@+id/edt_baogia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btn_baogia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Báo Giá"
+        app:cornerRadius="10sp" />
+
+</LinearLayout>

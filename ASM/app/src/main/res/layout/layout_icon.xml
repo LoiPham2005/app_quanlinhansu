@@ -1,0 +1,49 @@
+<!-- res/layout/layout_icon.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/icon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+<RelativeLayout
+    android:id="@+id/layoutTren"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/imgsearch"
+        android:src="@drawable/alarm1" />
+
+    <ImageView
+        android:id="@+id/imgsearch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/imageback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/back" />
+</RelativeLayout>
+
+<!--        <Button-->
+<!--            android:layout_below="@id/layoutTren"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="20sp"-->
+<!--            android:layout_marginRight="10sp"-->
+<!--            android:text="THÊM MỚI" />-->
+
+</RelativeLayout>
