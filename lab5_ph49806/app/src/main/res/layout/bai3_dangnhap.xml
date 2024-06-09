@@ -81,6 +81,14 @@
 
     </LinearLayout>
 
+    <CheckBox
+        android:id="@+id/cb_luuMK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Lưu đăng nhập" />
+
+
     <Button
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
