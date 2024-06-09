@@ -34,7 +34,9 @@ public class Home extends AppCompatActivity {
 
         btnThem = findViewById(R.id.btn_them);
 
-        btnThem.setOnClickListener(v -> launcherAddStudent.launch(new Intent(Home.this, AddStudentActivity.class)));
+        btnThem.setOnClickListener(v ->
+                launcherAddStudent.launch(new Intent(Home.this, AddStudentActivity.class))
+        );
 
         populateStudentList();
         adapter = new ListStudentAdapter(this, studentList, launcherEditStudent); // Truyền cả launcherEditStudent

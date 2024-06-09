@@ -7,47 +7,49 @@
     tools:context="phongban.maketing">
 
     <!-- Include the icon layout -->
-    <include
-        android:id="@+id/include_icon"
-        layout="@layout/layout_icon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+<!--    <include-->
+<!--        android:id="@+id/include_icon"-->
+<!--        layout="@layout/layout_icon"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
 
     <!-- Text view below the icon layout -->
-    <TextView
-        android:id="@+id/dsnv"
-        android:layout_below="@id/include_icon"
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="20sp"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="DANH SÁCH NHÂN VIÊN MARKETING"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:background="#53BC42"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maketing"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
 
     <Button
         android:id="@+id/btn_them"
-        android:layout_below="@id/dsnv"
+        android:layout_below="@id/toolbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="20sp"
         android:layout_marginRight="10sp"
-        android:text="THÊM MỚI" />
+        android:text="ADD NEW" />
 
     <!-- ListView below the text view and above the bottom menu -->
     <ListView
-        android:id="@+id/lv_maketing"
+        android:id="@+id/lv_dev"
         android:layout_below="@id/btn_them"
-        android:layout_above="@id/include_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <!-- Include the menu layout at the bottom -->
-    <include
-        android:id="@+id/include_menu"
-        layout="@layout/layout_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
+
 </RelativeLayout>
 

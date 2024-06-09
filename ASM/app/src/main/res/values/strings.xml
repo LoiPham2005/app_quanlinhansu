@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ASM</string>
+    <string name="app_name"></string>
     <string name="login_name">Welcome to nishkam</string>
     <string name="login1">Log in to continue</string>
     <string name="login_email">Enter Email</string>

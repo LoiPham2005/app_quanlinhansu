@@ -17,7 +17,8 @@
             android:exported="false" />
         <activity
             android:name="phongban.themnhanvien.them_nv"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName="phongban.developer"/>
         <activity
             android:name="phongban.finance"
             android:exported="true" />
@@ -26,7 +27,9 @@
             android:exported="true" />
         <activity
             android:name="phongban.developer"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="phongban.phongban"
+            />
         <activity
             android:name="nhanvien.nhanvien"
             android:exported="true" />
@@ -38,10 +41,12 @@
             android:exported="true" />
         <activity
             android:name="phongban.phongban"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="manchinh.home"/>
         <activity
             android:name="phongban.maketing"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName="phongban.phongban"/>
         <activity
             android:name="manchinh.home"
             android:exported="true" />

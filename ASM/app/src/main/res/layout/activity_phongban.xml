@@ -44,34 +44,46 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/menu"
+<!--    <LinearLayout-->
+<!--        android:id="@+id/menu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70sp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_below="@id/icon"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:background="#53BC42">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Phòng ban"-->
+<!--            android:textSize="30sp"/>-->
+
+<!--    </LinearLayout>-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="20sp"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="70sp"
-        android:orientation="horizontal"
-        android:layout_below="@id/icon"
-        android:background="#53BC42">
+        android:layout_height="wrap_content"
+        android:background="#53BC42"
+        >
 
-        <Space
-            android:layout_width="0sp"
-            android:layout_height="70sp"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:layout_width="65sp"
-            android:layout_height="70sp"
-            android:src="@drawable/menu"
-            android:layout_marginRight="20sp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textColor="@color/black"
+            android:textSize="30sp"
             />
 
-    </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:id="@+id/layout_marketing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10sp"
-        android:layout_below="@id/menu"
+        android:layout_below="@id/toolbar"
         android:background="#D14C4C"
         >
 

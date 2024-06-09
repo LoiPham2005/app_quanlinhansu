@@ -35,7 +35,7 @@ public class SuaThongTin extends AppCompatActivity {
 
         // Tìm các view bằng ID
         edLop = findViewById(R.id.ed_lop);
-        edID = findViewById(R.id.ed_ID);
+//        edID = findViewById(R.id.ed_ID);
         edName = findViewById(R.id.ed_name);
         tv_info = findViewById(R.id.tv_info);
         btnSave = findViewById(R.id.btn_save);
@@ -47,7 +47,7 @@ public class SuaThongTin extends AppCompatActivity {
         String lop = intent.getStringExtra("lop");
 
         // Đặt giá trị vào các EditText
-        edID.setText(id);
+//        edID.setText(id);
         edName.setText(name);
         edLop.setText(lop);
 
@@ -60,7 +60,7 @@ public class SuaThongTin extends AppCompatActivity {
             @Override
             public void handleOnBackPressed() {
                 Intent resultIntent = new Intent();
-                resultIntent.putExtra("id", edID.getText().toString());
+                resultIntent.putExtra("id", id);
                 resultIntent.putExtra("name", edName.getText().toString());
                 resultIntent.putExtra("lop", edLop.getText().toString());
                 setResult(RESULT_OK, resultIntent);

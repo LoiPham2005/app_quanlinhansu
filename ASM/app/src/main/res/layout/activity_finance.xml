@@ -7,177 +7,54 @@
     android:layout_height="match_parent"
     tools:context="phongban.finance">
 
-    <RelativeLayout
-        android:id="@+id/icon"
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="20sp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#53BC42"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finance"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Text view below the icon layout -->
+    <!--    <TextView-->
+    <!--        android:id="@+id/dsnv"-->
+    <!--        android:layout_below="@id/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:text="DANH SÁCH NHÂN VIÊN"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <Button
+        android:id="@+id/btn_them"
+        android:layout_below="@id/toolbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <ImageView
-            android:layout_width="30sp"
-            android:layout_height="30sp"
-            android:src="@drawable/alarm1"
-            android:layout_toStartOf="@id/imgsearch"
-            android:layout_centerVertical="true"
-            />
-
-        <ImageView
-            android:id="@+id/imgsearch"
-            android:layout_width="30sp"
-            android:layout_height="30sp"
-            android:src="@drawable/search"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_margin="30sp"
-            />
-
-        <ImageView
-            android:id="@+id/imageback"
-            android:layout_width="30sp"
-            android:layout_height="30sp"
-            android:layout_margin="30sp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="0dp"
-            android:src="@drawable/back" />
-
-    </RelativeLayout>
-
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="1"
-        android:layout_marginLeft="10sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20sp"
         android:layout_marginRight="10sp"
-        android:layout_below="@id/icon"
-        >
+        android:text="ADD NEW" />
 
-        <TableRow
-            android:background="#53BC42"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Code"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Full name"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="position"
-                android:padding="8dp"/>
-
-
-        </TableRow>
-
-        <TableRow
-            android:background="#D9D9D9"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PH25213"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="phạm đức lợi"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="leder"
-                android:padding="8dp"/>
-        </TableRow>
-
-        <TableRow
-            android:background="#D9D9D9"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PH22463"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="phạm Văn Thành"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="staff"
-                android:padding="8dp"/>
-        </TableRow>
-
-        <TableRow
-            android:background="#D9D9D9"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PH53231"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nguyễn văn An"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="staff"
-                android:padding="8dp"/>
-        </TableRow>
-
-    </TableLayout>
-
-    <LinearLayout
+    <!-- ListView below the text view and above the bottom menu -->
+    <ListView
+        android:id="@+id/lv_dev"
+        android:layout_below="@id/btn_them"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#CABCB9"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:paddingTop="10sp"
-        >
+        android:layout_height="wrap_content" />
 
-        <ImageView
-            android:id="@+id/icon_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/house1"
-            android:layout_weight="1"
-            />
 
-        <ImageView
-            android:id="@+id/icon_news"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/new1"
-            android:layout_weight="1"
-            />
 
-        <ImageView
-            android:id="@+id/icon_settings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/setting1"
-            android:layout_weight="1"
-            />
 
-    </LinearLayout>
 
 </RelativeLayout>

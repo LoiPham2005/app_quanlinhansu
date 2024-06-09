@@ -75,8 +75,7 @@ public class AdapterStudent extends BaseAdapter {
             intent.putExtra("lop", student.getLop());
 
             // Truyền vị trí hiện tại vào launcher để MainActivity biết cần cập nhật sinh viên nào
-            ((MainActivity) context).currentEditPosition = position;
-            launcher.launch(intent);
+           launcher.launch(intent);
         });
 
         return row;

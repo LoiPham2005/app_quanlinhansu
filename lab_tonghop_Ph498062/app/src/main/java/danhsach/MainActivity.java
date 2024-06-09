@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
     AdapterStudent adapter;
     List<Student> studentsList;
-    int currentEditPosition; // Lưu trữ vị trí của sinh viên đang được sửa
+//    int currentEditPosition; // Lưu trữ vị trí của sinh viên đang được sửa
     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,20 +85,21 @@ public class MainActivity extends AppCompatActivity {
                         String name = data.getStringExtra("name");
                         String lop = data.getStringExtra("lop");
 
-                        if (currentEditPosition != -1 && id != null && name != null && lop != null) {
-                            Student student = studentsList.get(currentEditPosition);
-                            student.setId(id);
-                            student.setHoTen(name);
-                            student.setLop(lop);
-                            adapter.notifyDataSetChanged();
-                        }
-//                        for (Student student : studentsList){
-//                            if(student.getId() == id){
-//                                student.setHoTen(name);
-//                                student.setLop(lop);
-//                                adapter.notifyDataSetChanged();
-//                            }
+//                        if (currentEditPosition != -1 && id != null && name != null && lop != null) {
+//                            Student student = studentsList.get(currentEditPosition);
+//                            student.setId(id);
+//                            student.setHoTen(name);
+//                            student.setLop(lop);
+//                            adapter.notifyDataSetChanged();
 //                        }
+                        for (Student student : studentsList){
+                            if(student.getId().equals(id)){
+                                student.setHoTen(name);
+                                student.setLop(lop);
+                                adapter.notifyDataSetChanged();
+                                break;
+                            }
+                        }
 
                     }
                 }

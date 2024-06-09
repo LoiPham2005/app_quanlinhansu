@@ -26,10 +26,7 @@ public class EditLopActivity extends AppCompatActivity {
     Button btnSave;
     int studentId;
     String name, diaChi;
-    Spinner spinnerSua;
 
-    Spinner spnSchool;
-    EditText edtHoTen, edtDiaChi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -16,6 +16,7 @@ import androidx.activity.result.ActivityResultLauncher;
 
 import java.util.ArrayList;
 
+import phongban.developer;
 import phongban.suanhanvien.suanhanvien;
 import poly.edu.vn.asm.R;
 
@@ -24,10 +25,6 @@ public class adapter_nhanVien extends BaseAdapter {
     ArrayList<NhanVien> list;
     ActivityResultLauncher<Intent> launcher;
 
-//    public adapter_nhanVien(Context context, ArrayList<NhanVien> list) {
-//        this.context = context;
-//        this.list = list;
-//    }
 
     public adapter_nhanVien(Context context, ArrayList<NhanVien> list, ActivityResultLauncher<Intent> launcher) {
         this.context = context;
@@ -52,47 +49,41 @@ public class adapter_nhanVien extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if(convertView==null) {
+        View row;
+        if (convertView != null) {
+            row = convertView;
+        } else {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-            convertView = inflater.inflate(R.layout.developer_phu, parent, false);
-
-            TextView tvID = convertView.findViewById(R.id.tv_maNV);
-            TextView tvName = convertView.findViewById(R.id.tv_name);
-            TextView tvAddress = convertView.findViewById(R.id.tv_chucvu);
-            Button btnUpdate = convertView.findViewById(R.id.btn_update);
-            Button btnDelete = convertView.findViewById(R.id.btn_delete);
-
-            NhanVien devo = list.get(position);
-
-            tvID.setText("Mã: "+devo.getMaNV());
-            tvName.setText("Họ tên: "+devo.getHoTen());
-            tvAddress.setText("Chức vụ: "+devo.getChucVu());
-
-            btnDelete.setOnClickListener(v -> confirmDelete(position));
-
-            btnUpdate.setOnClickListener(v -> {
-                // Gọi phương thức sửa thông tin nhân viên
-                editNhanVien(position);
-            });
-            
-
+            row = inflater.inflate(R.layout.developer_phu, parent, false);
         }
-        return convertView;
+        TextView tvID = row.findViewById(R.id.tv_maNV);
+        TextView tvName = row.findViewById(R.id.tv_name);
+        TextView tvAddress = row.findViewById(R.id.tv_chucvu);
+        Button btnUpdate = row.findViewById(R.id.btn_update);
+        Button btnDelete = row.findViewById(R.id.btn_delete);
+
+        NhanVien devo = list.get(position);
+
+        tvID.setText("Mã: " + devo.getMaNV());
+        tvName.setText("Họ tên: " + devo.getHoTen());
+        tvAddress.setText("Chức vụ: " + devo.getChucVu());
+
+        btnDelete.setOnClickListener(v -> confirmDelete(position));
+
+        btnUpdate.setOnClickListener(v -> {
+            // Gọi phương thức sửa thông tin nhân viên
+            Intent intent = new Intent(context, suanhanvien.class);
+            // Đính kèm thông tin nhân viên cần sửa vào Intent
+            intent.putExtra("ma", devo.getMaNV());
+            intent.putExtra("ten", devo.getHoTen());
+            intent.putExtra("chucvu", devo.getChucVu());
+
+            launcher.launch(intent);
+        });
+
+        return row;
     }
 
-    private void editNhanVien(int position) {
-        NhanVien nhanVien = list.get(position);
-
-        // Tạo Intent để mở giao diện sửa thông tin nhân viên
-        Intent intent = new Intent(context, suanhanvien.class);
-        // Đính kèm thông tin nhân viên cần sửa vào Intent
-        intent.putExtra("ma", nhanVien.getMaNV());
-        intent.putExtra("ten", nhanVien.getHoTen());
-        intent.putExtra("chucvu", nhanVien.getChucVu());
-        // Khởi động activity để sửa thông tin nhân viên
-//        context.startActivity(intent);
-
-    }
 
     private void confirmDelete(int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);

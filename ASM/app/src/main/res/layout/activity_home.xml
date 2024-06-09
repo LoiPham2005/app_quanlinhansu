@@ -57,16 +57,6 @@
             android:layout_marginLeft="20sp"
             android:textColor="#000000" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/department_text"
-            android:text="3"
-            android:textSize="40sp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            />
-
         <Button
             android:id="@+id/btn_detail1"
             android:layout_width="wrap_content"
@@ -143,15 +133,7 @@
             android:layout_marginLeft="20sp"
             android:textColor="#000000" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/employee_text1"
-            android:text="10"
-            android:textSize="40sp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            />
+
 
         <Button
             android:id="@+id/btn_detail2"
@@ -167,48 +149,6 @@
 
     </RelativeLayout>
 
-
-    <RelativeLayout
-        android:id="@+id/recruitment"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="140sp"
-        android:background="#7555D2"
-        android:layout_below="@id/employees"
-        android:padding="16dp">
-
-        <TextView
-            android:id="@+id/recruitment_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Recruitment"
-            android:textSize="30sp"
-            android:layout_marginLeft="20sp"
-            android:textColor="#000000" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/recruitment_text"
-            android:text="10"
-            android:textSize="40sp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            />
-
-        <Button
-            android:id="@+id/btn_detail3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="20sp"
-            android:text="Details"
-            android:backgroundTint="#B9C534"
-            android:textColor="#000000"
-            android:radius="16dp" />
-
-    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

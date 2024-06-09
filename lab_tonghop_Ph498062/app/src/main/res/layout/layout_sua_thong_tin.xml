@@ -20,13 +20,13 @@
         android:layout_height="wrap_content"
         android:text="Sửa tên lớp ở dưới" />
 
-    <EditText
-        android:id="@+id/ed_ID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Sửa mã "
-        android:textSize="20dp"
-        />
+<!--    <EditText-->
+<!--        android:id="@+id/ed_ID"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Sửa mã "-->
+<!--        android:textSize="20dp"-->
+<!--        />-->
 
     <EditText
         android:id="@+id/ed_name"

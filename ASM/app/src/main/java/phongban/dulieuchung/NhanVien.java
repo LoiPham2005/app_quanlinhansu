@@ -1,6 +1,7 @@
 package phongban.dulieuchung;
 
 public class NhanVien {
+
     private String maNV;
     private String hoTen;
     private String chucVu;
@@ -9,7 +10,9 @@ public class NhanVien {
         this.maNV = maNV;
         this.hoTen = hoTen;
         this.chucVu = chucVu;
+
     }
+
 
     public String getMaNV() {
         return maNV;
