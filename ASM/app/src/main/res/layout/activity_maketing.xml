@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Maketing"
+            android:text="@string/tv_maketing"
             android:textColor="@color/black"
             android:textSize="30sp"
             />
@@ -40,7 +40,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="20sp"
         android:layout_marginRight="10sp"
-        android:text="ADD NEW" />
+        android:text="@string/btn_them" />
 
     <!-- ListView below the text view and above the bottom menu -->
     <ListView

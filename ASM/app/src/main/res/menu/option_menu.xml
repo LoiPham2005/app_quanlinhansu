@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/it_3gạch"
-        android:title="Đăng xuất"
+        android:title="LOG OUT"
         app:showAsAction="never"
         />
 </menu>

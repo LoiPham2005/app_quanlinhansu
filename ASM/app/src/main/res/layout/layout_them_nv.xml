@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="THÊM NHÂN VIÊN"
+            android:text="@string/tv_themNV"
             android:textColor="#2196F3"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -42,7 +42,7 @@
             android:layout_marginTop="20sp"
             android:layout_marginBottom="20sp"
             android:background="@drawable/custom_edittext"
-            android:hint="Nhập Mã Nhân viên" />
+            android:hint="@string/tv_ma" />
 
         <EditText
             android:id="@+id/edt_hoten"
@@ -50,14 +50,14 @@
             android:layout_height="50sp"
             android:layout_marginBottom="20sp"
             android:background="@drawable/custom_edittext"
-            android:hint="Nhập Họ và tên" />
+            android:hint="@string/tv_hoten" />
 
         <EditText
             android:id="@+id/edt_chucvu"
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:background="@drawable/custom_edittext"
-            android:hint="Nhập chức vụ" />
+            android:hint="@string/tv_chucvu" />
 
         <Button
             android:id="@+id/btn_tao"
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
             android:backgroundTint="#D35781"
-            android:text="TẠO" />
+            android:text="@string/btn_tao" />
     </LinearLayout>
 
 </LinearLayout>

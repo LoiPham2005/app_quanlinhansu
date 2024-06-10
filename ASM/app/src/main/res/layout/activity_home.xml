@@ -27,7 +27,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/alarm1"
-            android:layout_marginRight="15sp"
+            android:layout_marginRight="20sp"
             />
         <ImageView
             android:id="@+id/search"
@@ -52,7 +52,7 @@
             android:id="@+id/department_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Department"
+            android:text="@string/tv_department"
             android:textSize="30sp"
             android:layout_marginLeft="20sp"
             android:textColor="#000000" />
@@ -64,7 +64,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="20sp"
-            android:text="Details"
+            android:text="@string/btn_detail"
             android:backgroundTint="#1D9A39"
             android:textColor="#000000"
             android:radius="16dp" />
@@ -128,7 +128,7 @@
             android:id="@+id/employee_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Employees"
+            android:text="@string/tv_employees"
             android:textSize="30sp"
             android:layout_marginLeft="20sp"
             android:textColor="#000000" />
@@ -142,7 +142,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="20sp"
-            android:text="Details"
+            android:text="@string/btn_detail2"
             android:backgroundTint="#C17261"
             android:textColor="#000000"
             android:radius="16dp" />

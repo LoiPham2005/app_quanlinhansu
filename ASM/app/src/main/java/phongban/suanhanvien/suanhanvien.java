@@ -71,10 +71,10 @@ public class suanhanvien extends AppCompatActivity {
 
 
         // hiển thị thông tin cũ
-        tvThongTinCu.setText("Sửa thông tin: \n" +
-                "\nmã nhân viên: " + id +
-                "\ntên nhân viên: " + name +
-                "\nchức vụ: " + chucVu);
+        tvThongTinCu.setText("Edit information: \n" +
+                "\nID: " + id +
+                "\nFullname: " + name +
+                "\nPosition: " + chucVu);
 
         // Gán dữ liệu vào các EditText
 //        edtMa.setText(id);

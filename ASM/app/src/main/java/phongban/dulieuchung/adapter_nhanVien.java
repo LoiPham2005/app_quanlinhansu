@@ -64,9 +64,9 @@ public class adapter_nhanVien extends BaseAdapter {
 
         NhanVien devo = list.get(position);
 
-        tvID.setText("Mã: " + devo.getMaNV());
-        tvName.setText("Họ tên: " + devo.getHoTen());
-        tvAddress.setText("Chức vụ: " + devo.getChucVu());
+        tvID.setText("ID: " + devo.getMaNV());
+        tvName.setText("Fullname: " + devo.getHoTen());
+        tvAddress.setText("Position: " + devo.getChucVu());
 
         btnDelete.setOnClickListener(v -> confirmDelete(position));
 

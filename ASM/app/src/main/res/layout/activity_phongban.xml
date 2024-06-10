@@ -71,7 +71,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Department"
+            android:text="@string/tv_phongban"
             android:textColor="@color/black"
             android:textSize="30sp"
             />
@@ -97,7 +97,7 @@
             android:id="@+id/tv_maketing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Maketing"
+            android:text="@string/tv_marketing"
             android:textColor="#000000"
             android:textSize="30sp"
             android:layout_gravity="center"
@@ -124,7 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20sp"
-            android:text="Developer"
+            android:text="@string/tv_devoloper"
             android:textColor="#000000"
             android:textSize="30sp" />
     </LinearLayout>
@@ -147,7 +147,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20sp"
-            android:text="Finance"
+            android:text="@string/tv_finance"
             android:textColor="#000000"
             android:textSize="30sp" />
     </LinearLayout>

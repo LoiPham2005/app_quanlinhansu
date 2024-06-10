@@ -7,6 +7,33 @@
     <string name="login_login">Login</string>
     <string name="login_register">register</string>
     <string name="login_forgot">If you don\'t have an account, click </string>
-    <string name="register_log">Register\n</string>
-
+    <string name="register_log">Register</string>
+    <string name="Savelogin">Save login</string>
+    <string name="tv_department">Department</string>
+    <string name="tv_employees">Employees</string>
+    <string name="btn_detail">Details</string>
+    <string name="btn_detail2">Details</string>
+    <string name="tv_phongban">Department</string>
+    <string name="tv_marketing">Maketing</string>
+    <string name="tv_devoloper">Developer</string>
+    <string name="tv_finance">Finance</string>
+    <string name="tv_nhanvien">Employees</string>
+    <string name="btn_them">ADD NEW</string>
+    <string name="tv_maketing">Maketing</string>
+    <string name="tintuc1">The company has special agreements</string>
+    <string name="tv_tintuc2">Teambuilding in Ha Long</string>
+    <string name="tv_suathongtin">EDIT STAFF</string>
+    <string name="tv_hoten">Enter fullname</string>
+    <string name="tv_chucvu">Enter position</string>
+    <string name="tv_sua">Fix</string>
+    <string name="tv_themNV">More staff</string>
+    <string name="tv_ma">Enter ID</string>
+    <string name="btn_tao">Create</string>
+    <string name="tv_account">Account</string>
+    <string name="tv_information">Personal Information</string>
+    <string name="tv_change_password">Change Password</string>
+    <string name="tv_hotline">Support Hotline</string>
+    <string name="tv_guide">User Manual</string>
+    <string name="tv_faq">Frequently Asked Questions</string>
+    <string name="btn_logout">Log Out</string>
 </resources>
