@@ -1,5 +1,6 @@
 package poly.edu.vn.asm;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,9 +13,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import poly.edu.vn.asm.luufile.ReadWriteUser;
+import poly.edu.vn.asm.luufile.User;
+
 public class dangki extends AppCompatActivity {
     EditText edtName, edtEmail, edtPassword, edtConfirmPassword;
     Button btnRegister;
+    Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +64,7 @@ public class dangki extends AppCompatActivity {
 
                 boolean hasError = false;
 
-                if (name.length() < 5) {
+                if (name.length() < 3) {
                     edtName.setError("Name must be at least 3 characters");
                     hasError = true;
                 }
@@ -69,7 +74,7 @@ public class dangki extends AppCompatActivity {
                     hasError = true;
                 }
 
-                if (pass.length() < 6) {
+                if (pass.length() < 5) {
                     edtPassword.setError("Password must be at least 6 characters");
                     hasError = true;
                 }
@@ -83,11 +88,15 @@ public class dangki extends AppCompatActivity {
                     return;
                 }
 
+                // ghi dữ liệu vào file
+                ReadWriteUser readWriteUser = new ReadWriteUser(context);
+                readWriteUser.writeUser(context, "user.txt",
+                        new User(email, pass));
 
                 Intent intent = new Intent(dangki.this, login.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("email", email);
-                bundle.putString("password",pass);
+                bundle.putString("password", pass);
                 intent.putExtras(bundle);
                 startActivity(intent);
 

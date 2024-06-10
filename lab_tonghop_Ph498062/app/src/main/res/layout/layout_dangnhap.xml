@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_edittext_bai3"
                 android:backgroundTint="#FF9800"
-                android:hint="mời nhập" />
+                 />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_edittext_bai3"
                 android:backgroundTint="#FF9800"
-                android:hint="mời nhập" />
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>

@@ -85,13 +85,16 @@ public class nhanvien extends AppCompatActivity {
 
     private void populateDev() {
         developerList.add(new NhanVien("PH01", "Phạm Đức Lợi", "Leder"));
-        developerList.add(new NhanVien("PH02", "Phạm Văn Thành ", "staff"));
+        developerList.add(new NhanVien("PH02", "Phạm Văn Thành ", "PM"));
         developerList.add(new NhanVien("PH03", "Nguyễn Trung Duy", "staff"));
         developerList.add(new NhanVien("PH04", "Lê Thị Hiền", "staff"));
+        developerList.add(new NhanVien("PH05", "Nguyễn Văn Quết", "staff"));
+        developerList.add(new NhanVien("PH06", "Lê Thị Hương", "staff"));
+        developerList.add(new NhanVien("PH07", "Phạm Hùng Quang", "staff"));
+        developerList.add(new NhanVien("PH08", "Lê Hải Anh", "staff"));
     }
 
     // sửa thông tin
-    // developer.java
     ActivityResultLauncher<Intent> launcherEdit = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {

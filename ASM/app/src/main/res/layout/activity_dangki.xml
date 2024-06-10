@@ -72,6 +72,7 @@
         app:errorEnabled="true"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="20dp"
+        app:passwordToggleEnabled="true"
         android:textColorHint="#17E34B">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -91,7 +92,7 @@
         app:counterMaxLength="50"
         app:errorEnabled="true"
         android:layout_marginBottom="10dp"
-        app:passwordToggleEnabled="true"
+
         android:textColorHint="#17E34B">
 
         <com.google.android.material.textfield.TextInputEditText

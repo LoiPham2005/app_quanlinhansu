@@ -1,5 +1,6 @@
 package dangnhap;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,11 +13,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import lab8.ReadWriteUser;
+import lab8.User;
 import poly.edu.vn.lab5_ph49806.R;
 
 public class dangki extends AppCompatActivity {
     EditText edtName2, edtPassword2, edtConfirmPassword2;
     Button btnLogin2;
+    Context context =this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +84,12 @@ public class dangki extends AppCompatActivity {
                 if (hasError) {
                     return;
                 }
+
+                // ghi dữ liệu vào file
+                ReadWriteUser readWriteUser = new ReadWriteUser(context);
+                readWriteUser.writeUser(context, "user.txt",
+                        new User(name, password));
+
 
                 Intent intent2 = new Intent(dangki.this, dangnhap.class);
                 Bundle bundle = new Bundle();
